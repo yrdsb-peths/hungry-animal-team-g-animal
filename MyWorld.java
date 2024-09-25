@@ -8,15 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
-    public MyWorld()
-    {    
-        
-    public int score = 0;
+    int score = 0;
     Label scoreLabel;
     
     /**
@@ -25,6 +17,12 @@ public class MyWorld extends World
      */
     public MyWorld()
     {    
+            
+        /**
+         * Constructor for objects of class MyWorld.
+         * 
+         */
+
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false);
         
@@ -36,8 +34,7 @@ public class MyWorld extends World
         
         createApple();
     }
-    
-        public void gameOver()
+    public void gameOver()
     {   
         /**
          * adds a gameover label when player loses the game
@@ -62,5 +59,4 @@ public class MyWorld extends World
         
         addObject(apple, x, 0);
     } 
-    }
 }
