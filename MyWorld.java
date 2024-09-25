@@ -46,7 +46,7 @@ public class MyWorld extends World
         /**
          * adds apple at random location
          */
-        Apple apple = new Apple();
+        Food apple = new Apple();
         int x = Greenfoot.getRandomNumber(600);
         
         addObject(apple, x, 0);
