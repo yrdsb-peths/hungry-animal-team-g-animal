@@ -10,11 +10,10 @@ public class MyWorld extends World
 {
     int score = 0;
     Label scoreLabel;
-    
+    int appleNum = 0;
    
     public MyWorld()
     {  
-
         super(600, 400, 1, false);
         
         Elephant elephant = new Elephant();
@@ -35,20 +34,22 @@ public class MyWorld extends World
     {
         score++;
         scoreLabel.setValue(score);
-        
-        Elephant elephant = new Elephant();
-        addObject(elephant, 300,300);
-
     }
     
     public void createApple()
     {   
-        /**
-         * adds apple at random location
-         */
-        Food apple = new Apple();
-        int x = Greenfoot.getRandomNumber(600);
-        
-        addObject(apple, x, 0);
+        appleNum = Greenfoot.getRandomNumber(4);
+        if(appleNum <= 4)
+        {
+            Apple apple = new Apple();
+            int x = Greenfoot.getRandomNumber(600);
+            addObject(apple, x, 0);            
+        }
+        else
+        {
+            PoisonApple poisonApple = new PoisonApple();
+            int x = Greenfoot.getRandomNumber(600);
+            addObject(poisonApple, x, 0);
+        }
     } 
 }
