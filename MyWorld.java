@@ -11,19 +11,10 @@ public class MyWorld extends World
     int score = 0;
     Label scoreLabel;
     
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
+   
     public MyWorld()
-    {    
-            
-        /**
-         * Constructor for objects of class MyWorld.
-         * 
-         */
+    {  
 
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false);
         
         Elephant elephant = new Elephant();
@@ -36,9 +27,6 @@ public class MyWorld extends World
     }
     public void gameOver()
     {   
-        /**
-         * adds a gameover label when player loses the game
-         */
         Label gameOverLabel = new Label("Game Over", 100);
         addObject(gameOverLabel, 300, 200);
     }
@@ -47,6 +35,11 @@ public class MyWorld extends World
     {
         score++;
         scoreLabel.setValue(score);
+        super(600, 400, 1);
+        
+        Elephant elephant = new Elephant();
+        addObject(elephant, 300,300);
+
     }
     
     public void createApple()
