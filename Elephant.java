@@ -23,8 +23,10 @@ public class Elephant extends Actor
         {
             move(3);
         }
+        
         eat();
     }
+    
     public void eat()
     {
         if(isTouching(Apple.class))
@@ -34,5 +36,6 @@ public class Elephant extends Actor
             world.createApple();
             world.increaseScore();
         }
+
     }
-}
+    }
