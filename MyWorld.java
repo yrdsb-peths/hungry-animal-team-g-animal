@@ -14,7 +14,6 @@ public class MyWorld extends World
    
     public MyWorld()
     {  
-
         super(600, 400, 1, false);
         
         Elephant elephant = new Elephant();
@@ -35,20 +34,12 @@ public class MyWorld extends World
     {
         score++;
         scoreLabel.setValue(score);
-        
-        Elephant elephant = new Elephant();
-        addObject(elephant, 300,300);
-
     }
     
     public void createApple()
     {   
-        /**
-         * adds apple at random location
-         */
         Apple apple = new Apple();
         int x = Greenfoot.getRandomNumber(600);
-        
         addObject(apple, x, 0);
     } 
 }
