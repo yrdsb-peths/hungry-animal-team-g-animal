@@ -11,6 +11,7 @@ public class MyWorld extends World
     int score = 0;
     Label scoreLabel;
     int appleNum = 0;
+    int firstApple = 0;
    
     public MyWorld()
     {  
@@ -44,18 +45,28 @@ public class MyWorld extends World
     
     public void createApple()
     {   
-        appleNum = Greenfoot.getRandomNumber(5);
-        if(appleNum <= 4)
+        if(firstApple == 0)
         {
             Apple apple = new Apple();
             int x = Greenfoot.getRandomNumber(600);
-            addObject(apple, x, 0);            
+            addObject(apple, x, 0);
+            firstApple++;
         }
         else
         {
-            PoisonApple poisonApple = new PoisonApple();
-            int x = Greenfoot.getRandomNumber(600);
-            addObject(poisonApple, x, 0);
+            appleNum = Greenfoot.getRandomNumber(5);
+            if(appleNum <= 4)
+            {
+                Apple apple = new Apple();
+                int x = Greenfoot.getRandomNumber(600);
+                addObject(apple, x, 0);            
+            }
+            else
+            {
+                PoisonApple poisonApple = new PoisonApple();
+                int x = Greenfoot.getRandomNumber(600);
+                addObject(poisonApple, x, 0);
+            }
         }
     } 
 }
