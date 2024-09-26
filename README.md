@@ -1,1 +1,50 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=16138092&assignment_repo_type=AssignmentRepo)
+Hungry Animal Project Group G()
+{
+  Welcome to this README file();
+  memebersOfProject()
+  {
+    350444535(); //Team Lead
+    KarthikRaveeswaran();
+    cyc9887();
+  }
+  
+  upgradesToOriginalProject()
+  {
+    add.PoisonApple(); //score--
+  }
+  
+  abstractClassUsers(Food.class)
+  {
+    Apple.class();
+    PoisonApple.class();
+    useOfAbstractClass()
+    {
+    }
+  }
+  
+  polymorphismUsers()
+  {
+    useOfPolymorphism()
+    {
+    }
+  }
+  
+  overrideUsers()
+  {
+    useOfOverride()
+    {
+    }
+  }
+  
+  interfaceUsers()
+  {
+    useOfInterface()
+    {
+    }
+  }
+}
+
+public void version()
+{
+ version.1();
+}
