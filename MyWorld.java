@@ -54,12 +54,18 @@ public class MyWorld extends World
         }
         else
         {
-            appleNum = Greenfoot.getRandomNumber(5);
-            if(appleNum <= 3)
+            appleNum = Greenfoot.getRandomNumber(10);
+            if(appleNum <= 7)
             {
                 Apple apple = new Apple();
                 int x = Greenfoot.getRandomNumber(600);
                 addObject(apple, x, 0);            
+            }
+            else if(appleNum == 8)
+            {
+                Cherries cherries = new Cherries();
+                int x = Greenfoot.getRandomNumber(600);
+                addObject(cherries, x, 0);
             }
             else
             {
