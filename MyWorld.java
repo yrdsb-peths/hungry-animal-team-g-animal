@@ -36,9 +36,15 @@ public class MyWorld extends World
         scoreLabel.setValue(score);
     }
     
+    public void decreaseScore()
+    {
+        score--;
+        scoreLabel.setValue(score);
+    }
+    
     public void createApple()
     {   
-        appleNum = Greenfoot.getRandomNumber(4);
+        appleNum = Greenfoot.getRandomNumber(5);
         if(appleNum <= 4)
         {
             Apple apple = new Apple();

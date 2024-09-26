@@ -15,7 +15,7 @@ public class Apple extends Food
     public void act()
     {
         // Add your action code here.
-        setLocation(getX(), getY() + 3);
+        setLocation(getX(), getY());
         int x = getX();
         int y = getY() + 2;
         setLocation(x, y);
