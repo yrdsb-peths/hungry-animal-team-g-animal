@@ -50,12 +50,12 @@ public class MyWorld extends World
             Apple apple = new Apple();
             int x = Greenfoot.getRandomNumber(600);
             addObject(apple, x, 0);
-            firstApple++;
+            firstApple = 1;
         }
         else
         {
             appleNum = Greenfoot.getRandomNumber(5);
-            if(appleNum <= 4)
+            if(appleNum <= 3)
             {
                 Apple apple = new Apple();
                 int x = Greenfoot.getRandomNumber(600);
