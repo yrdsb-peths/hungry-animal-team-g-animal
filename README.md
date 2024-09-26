@@ -17,8 +17,10 @@ Hungry Animal Project Group G()
   {                                       
     Apple.class();                                       
     PoisonApple.class();                                       
+    Cherries.class();                                       
     useOfAbstractClass()                                       
-    {                                       
+    {                
+      useOfAbstractClass.implementsSpeedForUsers();                                       
     }                                       
   }                                       
   
