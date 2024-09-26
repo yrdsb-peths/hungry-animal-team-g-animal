@@ -26,6 +26,7 @@ public class PoisonApple extends Food
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
         {
+            world.removeObject(this);
             world.createApple();
         }
     }
