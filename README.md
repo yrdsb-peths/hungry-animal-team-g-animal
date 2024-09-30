@@ -10,6 +10,7 @@ cyc9887
 Upgrades To Original Project:
 PoisonApple (score -1) added by 350444535
 Cherries (score + 3) added by 350444535
+Background Sound added by KarthikRaveeswaran 
 
     
 Abstract Class Implmentation:
@@ -33,4 +34,4 @@ Used by Food Class
 Gives all classes under the food class a destory method                                                          
 Implemented by 350444535
 
-Version 6                                                                                                         
+Version 7                                                                                                   
