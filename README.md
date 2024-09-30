@@ -11,6 +11,7 @@ Hungry Animal Project Group G()
   upgradesToOriginalProject()                              
   {                                       
     add.PoisonApple(); //score--
+    add.Cherries(); //score+3
   }                                       
   
   abstractClassUsers(Food.class)
@@ -20,14 +21,30 @@ Hungry Animal Project Group G()
     Cherries.class();                                       
     useOfAbstractClass()                                       
     {                
-      useOfAbstractClass.implementsSpeedForUsers();                                       
+      useOfAbstractClass.implementsSpeedForUsers();    
+      implementedBy                                       
+      {                                       
+        350444535();                                       
+        cyc9887();                                       
+      }                                       
     }                                       
   }                                       
   
   polymorphismUsers()                                       
-  {                                       
+  {            
+    Apple.class();                                       
+    PoisonApple.class();                                       
+    Cherries.class();                                       
     useOfPolymorphism()                                       
-    {                                       
+    {                     
+      usersOfFoodClass()                                       
+      {                                       
+        returnedDifferentSpeeds();                                       
+        implementedBy()                                       
+        {                                       
+          350444535();                                       
+        }                                       
+      }
     }                                       
   }                                       
                                          
@@ -48,6 +65,6 @@ Hungry Animal Project Group G()
                                        
 public void version()                                       
 {                                       
- version.2();                                       
+ version.4();                                       
 }                                       
                                        
