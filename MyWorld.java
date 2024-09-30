@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
+    GreenfootSound backgroundSound = new GreenfootSound("Background.noise.mp3");
     int score = 0;
     Label scoreLabel;
     int appleNum = 0;
@@ -22,8 +23,12 @@ public class MyWorld extends World
         
         scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
+<<<<<<< Updated upstream
         
         createApple();
+=======
+        backgroundSound.play();
+>>>>>>> Stashed changes
     }
     public void gameOver()
     {   
