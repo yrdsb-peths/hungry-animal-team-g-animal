@@ -23,12 +23,10 @@ public class MyWorld extends World
         
         scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
-<<<<<<< Updated upstream
         
         createApple();
-=======
+
         backgroundSound.play();
->>>>>>> Stashed changes
     }
     public void gameOver()
     {   
