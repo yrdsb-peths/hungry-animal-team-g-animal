@@ -6,21 +6,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public abstract class Food extends Actor
+public abstract class Food extends Actor implements Destructable
 {
     int speed;
-    
 
     public Food(int speed)
     {
         this.speed = speed;
     }
-    /*
-    int value;
-    public Food(int value)
+    
+    public void destory()
     {
-        this.value = value;
+        getWorld().removeObject(this);
     }
-    public void spawn(){}
-    */
 }
