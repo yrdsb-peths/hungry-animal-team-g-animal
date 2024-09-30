@@ -30,4 +30,8 @@ public class PoisonApple extends Food
             world.createApple();
         }
     }
+    public void destroy()
+    {
+        System.out.println("that was poison");
+    }
 }

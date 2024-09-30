@@ -29,4 +29,8 @@ public class Cherries extends Food
             world.createApple();
         }
     }
+    public void destroy()
+    {
+        
+    }
 }

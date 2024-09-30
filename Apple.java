@@ -29,4 +29,8 @@ public class Apple extends Food
             world.removeObject(this);
         }
     }
+    public void destroy()
+    {
+        
+    }
 }
