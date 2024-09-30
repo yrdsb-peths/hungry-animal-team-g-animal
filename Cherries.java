@@ -1,16 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Apple here.
+ * Write a description of class Cherries here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Apple extends Food
+public class Cherries extends Food
 {
-    public Apple()
+    public Cherries()
     {
-        super(2);
+        super(4);
     }
     public void act()
     {
@@ -25,8 +25,8 @@ public class Apple extends Food
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
         {
-            world.gameOver();
             world.removeObject(this);
+            world.createApple();
         }
     }
 }

@@ -10,7 +10,7 @@ public class PoisonApple extends Food
 {
     public PoisonApple()
     {
-        super(1);
+        super(3);
     }
     /**
      * Act - do whatever the PoisonApple wants to do. This method is called whenever
@@ -19,7 +19,7 @@ public class PoisonApple extends Food
     public void act()
     {
         int x = getX();
-        int y = getY() + 2;
+        int y = getY() + speed;
         setLocation(x, y);
         
         
